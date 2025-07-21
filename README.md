@@ -1,1 +1,2 @@
-<a href="https://www.freepik.com/free-vector/abstract-wireframe-grid-line-room-perspective-dark-background_310506297.htm#fromView=search&page=1&position=26&uuid=3361b2ea-c201-41ca-9b58-00eed77cf102&query=Black+White+Grid">Image by starline on Freepik</a>
+Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-blue-shawl-lapel-suit-jacket-1036622/
+Photo by <a href="https://unsplash.com/@fempreneurstyledstock?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Leone Venter</a> on <a href="https://unsplash.com/photos/magic-keyboard-beside-mug-and-click-pen-VieM9BdZKFo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
