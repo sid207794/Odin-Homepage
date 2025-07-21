@@ -3,196 +3,129 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BATTLESHIP</title>
+    <title>Homepage</title>
 </head>
 <body>
-    <div id="loadingScreen"></div>
-    
-    <div id="gameScreen">
-        <header></header>
-
-        <div id="leftSidebar">
-            <div class="leftPanel">
-                <div class="shipStatus">
-                    <div class="carrierStatusWrap shipWrap">
-                        <div class="coordStatus">
-                            <div class="carrier1"></div>
-                            <div class="carrier2"></div>
-                            <div class="carrier3"></div>
-                            <div class="carrier4"></div>
-                            <div class="carrier5"></div>
-                        </div>
-                        <div class="carrierStatus">
-                            <img src="./images/carrierLeft.png" alt="carrier left">
-                        </div>
-                    </div>
-                    <div class="battleshipStatusWrap shipWrap">
-                        <div class="coordStatus">
-                            <div class="battleship1"></div>
-                            <div class="battleship2"></div>
-                            <div class="battleship3"></div>
-                            <div class="battleship4"></div>
-                        </div>
-                        <div class="battleshipStatus">
-                            <img src="./images/battleshipLeft.png" alt="battleship left">
-                        </div>
-                    </div>
-                    <div class="cruiserStatusWrap shipWrap">
-                        <div class="coordStatus">
-                            <div class="cruiser1"></div>
-                            <div class="cruiser2"></div>
-                            <div class="cruiser3"></div>
-                        </div>
-                        <div class="cruiserStatus">
-                            <img src="./images/cruiserLeft.png" alt="cruiser left">
-                        </div>
-                    </div>
-                    <div class="submarineStatusWrap shipWrap">
-                        <div class="coordStatus">
-                            <div class="submarine1"></div>
-                            <div class="submarine2"></div>
-                            <div class="submarine3"></div>
-                        </div>
-                        <div class="submarineStatus">
-                            <img src="./images/submarineLeft.png" alt="submarine left">
-                        </div>
-                    </div>
-                    <div class="destroyerStatusWrap shipWrap">
-                        <div class="coordStatus">
-                            <div class="destroyer1"></div>
-                            <div class="destroyer2"></div>
-                        </div>
-                        <div class="destroyerStatus">
-                            <img src="./images/destroyerLeft.png" alt="destroyer left">
-                        </div>
-                    </div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-left">
+                <div class="logo">
+                    <picture>
+                        <source srcset="./profile-600px.jpg" media="(max-width: 600px)">
+                        <source srcset="./profile-1200px.jpg" media="(max-width: 1200px)">
+                        <source srcset="./profile-2000px.jpg" media="(max-width: 2000px)">
+                        <img src="./profile-2000px.jpg" alt="profile picture">
+                    </picture>
                 </div>
-
-                <div class="actionStatus">
-                    <div class="indicatorBox">
-                        <div class="turnIndicator"></div>
-                    </div>
-                    <div class="infoBox">
-                        <div class="instruction"></div>
-                        <div class="status"></div>
-                    </div>
+            </div>
+            <div class="header-content-right">
+                <h1>About me</h1>
+                <div class="about">
+                    <p>
+                        I'm a software engineer with a passion for building web applications. I'm a quick learner and I'm always looking to improve my skills. 
+                    </p>
                 </div>
-
-                <div class="forfeit">
-                    <button class="start">PLAY</button>
-                    <button class="stop">FORFEIT</button>
+                <div class="connect">
+                    <a href="https://www.github.com/your-profile">GitHub</a>
+                    <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+                    <a href="https://www.twitter.com/your-profile">Twitter</a>
                 </div>
             </div>
         </div>
-
-        <div id="rightSidebar">
-            <div class="rightPanel">
-                <div class="shipStatus">
-                    <div class="carrierStatusWrap shipWrap">
-                        <div class="carrierStatus">
-                            <img src="./images/carrierRight.png" alt="carrier right">
-                        </div>
-                        <div class="coordStatus">
-                            <div class="carrier1"></div>
-                            <div class="carrier2"></div>
-                            <div class="carrier3"></div>
-                            <div class="carrier4"></div>
-                            <div class="carrier5"></div>
-                        </div>
+    </header>
+    <div class="main">
+        <h1>My work</h1>
+        <div class="main-content">
+            <div class="project one">
+                <div class="thumbnail one">Project thumbnail</div>
+                <div class="details one">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
                     </div>
-                    <div class="battleshipStatusWrap shipWrap">
-                        <div class="battleshipStatus">
-                            <img src="./images/battleshipRight.png" alt="battleship right">
-                        </div>
-                        <div class="coordStatus">
-                            <div class="battleship1"></div>
-                            <div class="battleship2"></div>
-                            <div class="battleship3"></div>
-                            <div class="battleship4"></div>
-                        </div>
-                    </div>
-                    <div class="cruiserStatusWrap shipWrap">
-                        <div class="cruiserStatus">
-                            <img src="./images/cruiserRight.png" alt="cruiser right">
-                        </div>
-                        <div class="coordStatus">
-                            <div class="cruiser1"></div>
-                            <div class="cruiser2"></div>
-                            <div class="cruiser3"></div>
-                        </div>
-                    </div>
-                    <div class="submarineStatusWrap shipWrap">
-                        <div class="submarineStatus">
-                            <img src="./images/submarineRight.png" alt="submarine right">
-                        </div>
-                        <div class="coordStatus">
-                            <div class="submarine1"></div>
-                            <div class="submarine2"></div>
-                            <div class="submarine3"></div>
-                        </div>
-                    </div>
-                    <div class="destroyerStatusWrap shipWrap">
-                        <div class="destroyerStatus">
-                            <img src="./images/destroyerRight.png" alt="destroyer right">
-                        </div>
-                        <div class="coordStatus">
-                            <div class="destroyer1"></div>
-                            <div class="destroyer2"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="actionStatus">
-                    <div class="indicatorBox">
-                        <div class="turnIndicator"></div>
-                    </div>
-                    <div class="infoBox">
-                        <div class="instruction"></div>
-                        <div class="status"></div>
-                    </div>
+                    <div class="description">Short description of the project.</div>
                 </div>
             </div>
-        </div>
-
-        <div id="gameplayZone">
-            <div class="videoResponse">
-                <div class="matchHistory">
-                    <div class="leftReport"></div>
-                    <div class="rightReport"></div>
-                </div>
-                <div class="matchOutcome">
-                    <div class="leftOutcome"></div>
-                    <div class="rightOutcome"></div>
+            <div class="project two">
+                <div class="thumbnail two">Project thumbnail</div>
+                <div class="details two">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
+                    </div>
+                    <div class="description">Short description of the project.</div>
                 </div>
             </div>
-
-            <div class="playerData">
-                <div class="scores"></div>
-                <div class="coordDataWrapper"></div>
-            </div>
-
-            <div class="playzoneWrap">
-                <div class="xScale">
-                    <div class="fleetScale"></div>
-                    <div class="attackScale"></div>
+            <div class="project three">
+                <div class="thumbnail three">Project thumbnail</div>
+                <div class="details three">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
+                    </div>
+                    <div class="description">Short description of the project.</div>
                 </div>
-
-                <div class="playzone">
-                    <div class="fleet">
-                        <div class="fleetGrid"></div>
+            </div>
+            <div class="project four">
+                <div class="thumbnail four">Project thumbnail</div>
+                <div class="details four">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
                     </div>
-                    <div class="yScale">
-                        <div class="midScale"></div>
+                    <div class="description">Short description of the project.</div>
+                </div>
+            </div>
+            <div class="project five">
+                <div class="thumbnail five">Project thumbnail</div>
+                <div class="details five">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
                     </div>
-                    <div class="attackArea">
-                        <div class="attackGrid"></div>
+                    <div class="description">Short description of the project.</div>
+                </div>
+            </div>
+            <div class="project six">
+                <div class="thumbnail six">Project thumbnail</div>
+                <div class="details six">
+                    <div class="title">
+                        <div class="projectName">Project name</div>
+                        <div class="linkToProject"><a href="#">GitHub</a></div>
                     </div>
+                    <div class="description">Short description of the project.</div>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <div class="footer-content-left-title"><h1>Contact me</h1></div>
+                <div class="footer-content-left-description">Please get in touch if you think our work can be mututally beneficial!</div>
+                <div class="address">Address line 1</div>
+                <div class="phone">+91 7525xxxx89</div>
+                <div class="email">sid207794@gmail.com</div>
+                <div class="connect-footer">
+                    <a href="https://www.github.com/your-profile">GitHub</a>
+                    <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+                    <a href="https://www.twitter.com/your-profile">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-content-right">
+                <div class="image">
+                    <picture>
+                        <source srcset="./footer-600px.jpg" media="(max-width: 600px)">
+                        <source srcset="./footer-1200px.jpg" media="(max-width: 1200px)">
+                        <source srcset="./footer-2000px.jpg" media="(max-width: 2000px)">
+                        <img src="./footer-2000px.jpg" alt="footer image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
